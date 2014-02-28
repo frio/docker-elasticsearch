@@ -1,13 +1,10 @@
 # ElasticSearch
+A barebones installaton of ElasticSearch 1.0.0, built as an experiment.  Forked from [arcus.io]'s image.
 
-ElasticSearch 0.90.1
+[arcus.io]: http://arcus.io
 
-Uses `elasticsearch` as the entrypoint with default options of `-f`
+## Why?
+This is designed to be coupled with a matching [logstash][2] [Dockerfile][3].  The idea is that this provides the database.  I wrote it before I realised that logstash ships with an embedded elasticsearch...
 
-* `docker build -t elasticsearch .`
-* `docker run elasticsearch`
-
-Ports
-
-* 9200
-* 9300
+[2]: http://logstash.net/
+[3]: http://github.com/frio/docker-logstash/
